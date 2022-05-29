@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>TwentyTwo</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220529173035">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- leaflet css  google map-->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css?_v=20220529173035" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js?_v=20220529173035"></script>
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header data-scroll="200" data-scroll-show class="header">
+			<div class="header__wrapper">
+				<div class="header__container header__container_wide">
+					<div class="header__column header__column_logo">
+						<a href="home.html" class="header__logo">TwentyTwo</a>
+					</div>
+					<div class="header__column header__column_wide">
+						<div class="header__menu menu">
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item"><a href="catalog.html" class="menu__link link-item">Catalog</a></li>
+									<li class="menu__item"><a href="gallery.html" class="menu__link link-item">Gallery</a></li>
+									<li class="menu__item"><a href="aboutUs.html" class="menu__link link-item">About us</a></li>
+									<li class="menu__item"><a href="contacts.html" class="menu__link link-item">Contact</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<div data-da=".menu__body,479.98" class="header__column header__column_buy">
+						<div class="header__buy buy-header">
+							<a href="#" class="buy-header__icon _icon-basket"></a>
+							<!-- ----------------------------------------------- -->
+							<!-- ----------------------------------------------- -->
+							<div class="buy-header__card card-buy">
+								<div class="card-buy__top top-head">
+									<div class="top-head__cart -icon-cart"><span>1</span></div>
+									<h2 class="top-head__subtitle">Your Cart</h2>
+									<div class="top-head__close" data-action="close">x</div>
+								</div>
+								<!-- ----------------------------------------------- -->
+								<div class="card-buy__wrapper">
+
+								</div>
+								<!-- ----------------------------------------------- -->
+								<div class="card-buy__footer">
+									<div class="card-buy__subtotal">
+										<span>Subtotal:</span>
+										<span>$21.60</span>
+									</div>
+									<a href="#" data-popup="#popup" class="card-buy__button button">Checkout</a>
+								</div>
+							</div>
+							<!-- ----------------------------------------------- -->
+							<!-- ----------------------------------------------- -->
+						</div>
+					</div>
+
+					<!-- burger -->
+					<div id="menu_button" class="menu-icon">
+						<input type="checkbox" id="menu_checkbox">
+						<label for="menu_checkbox" id="menu_label">
+							<div id="menu_text_bar"></div>
+						</label>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<section class="page__promo promo">
+				<div class="promo__container">
+					<div class="promo__item">
+						<div class="promo__content content-promo">
+							<h1 class="content-promo__title">Quis quisque mi rhoncus quis</h1>
+							<a href="catalog.html" data-da='.promo,767.98,1' class="content-promo__button button">Show catalog</a>
+						</div>
+						<div class="promo__image">
+							<picture><source data-srcset="img/promo/image_1.webp" type="image/webp"><img data-src="img/promo/image_1.jpg" alt="Женщина"></picture>
+						</div>
+					</div>
+					<div class="promo__item promo__item_mob">
+						<div class="promo__image promo__image_math">
+							<picture><source data-srcset="img/promo/image_2.webp" type="image/webp"><img data-src="img/promo/image_2.jpg" alt="Женщина"></picture>
+						</div>
+						<div data-da='.promo,767.98,2' class="promo__text">
+							<p>Blandit ultricies amet amet integer nunc volutpat. Blandit sit varius congue lorem habitant adipiscing. Cursus duis arcu, fermentum rhoncus aliquet lectus amet. </p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__catalog catalog">
+				<div class="catalog__container">
+					<h1 class="catalog__title">Catalog</h1>
+					<div class="catalog__slider slider-catalog">
+						<div class="slider-catalog__items slider-catalog__items_slider _swiper">
+							<div class="slider-catalog__slide">
+								<div class="slider-catalog__card card" data-id='01'>
+									<div class="card__image">
+										<picture><source srcset="img/catalog/clothes-1.webp" type="image/webp"><img class="card__photo" src="img/catalog/clothes-1.png" alt="clothes"></picture>
+									</div>
+									<div class="card__labels">
+										<div class="card__label"></div>
+									</div>
+									<div class="card__descr">
+										<h2 class="card__about">Non est magna</h2>
+										<div class="card__prices">
+											<div class="card__price">$38</div>
+										</div>
+										<div class="card__descr-hover hover-descr">
+											<div class="hover-descr__counter">
+												<div class="hover-descr__control" data-action="minus">-</div>
+												<div class="hover-descr__current" data-counter>1</div>
+												<div class="hover-descr__control" data-action="plus">+</div>
+											</div>
+											<button data-cart type="submit" class="hover-descr__button button">add to cart</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slider-catalog__slide">
+								<div class="slider-catalog__card card" data-id='02'>
+									<div class="card__image">
+										<picture><source srcset="img/catalog/clothes-2.webp" type="image/webp"><img class="card__photo" src="img/catalog/clothes-2.png" alt="clothes"></picture>
+									</div>
+									<div class="card__labels">
+										<div class="card__label"><picture><source srcset="img/catalog/sale.webp" type="image/webp"><img src="img/catalog/sale.png" alt="sale"></picture></div>
+									</div>
+									<div class="card__descr">
+										<h2 class="card__about">Non est magna</h2>
+										<div class="card__prices">
+											<div class="card__price">$38</div>
+										</div>
+										<div class="card__descr-hover hover-descr">
+											<div class="hover-descr__counter">
+												<div class="hover-descr__control" data-action="minus">-</div>
+												<div class="hover-descr__current" data-counter>1</div>
+												<div class="hover-descr__control" data-action="plus">+</div>
+											</div>
+											<button data-cart type="submit" class="hover-descr__button button">add to cart</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slider-catalog__slide">
+								<div class="slider-catalog__card card" data-id='03'>
+									<div class="card__image">
+										<picture><source srcset="img/catalog/clothes-3.webp" type="image/webp"><img class="card__photo" src="img/catalog/clothes-3.png" alt="clothes"></picture>
+									</div>
+									<div class="card__labels">
+										<div class="card__label"></div>
+									</div>
+									<div class="card__descr">
+										<h2 class="card__about">Non est magna</h2>
+										<div class="card__prices">
+											<div class="card__price">$38</div>
+											<div class="card__price card__price_old">$58</div>
+										</div>
+										<div class="card__descr-hover hover-descr">
+											<div class="hover-descr__counter">
+												<div class="hover-descr__control" data-action="minus">-</div>
+												<div class="hover-descr__current" data-counter>1</div>
+												<div class="hover-descr__control" data-action="plus">+</div>
+											</div>
+											<button data-cart type="submit" class="hover-descr__button button">add to cart</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slider-catalog__slide">
+								<div class="slider-catalog__card card" data-id='04'>
+									<div class="card__image">
+										<picture><source srcset="img/catalog/clothes-4.webp" type="image/webp"><img class="card__photo" src="img/catalog/clothes-4.png" alt="clothes"></picture>
+									</div>
+									<div class="card__labels">
+										<div class="card__label"></div>
+									</div>
+									<div class="card__descr">
+										<h2 class="card__about">Non est magna</h2>
+										<div class="card__prices">
+											<div class="card__price">$38</div>
+										</div>
+										<div class="card__descr-hover hover-descr">
+											<div class="hover-descr__counter">
+												<div class="hover-descr__control" data-action="minus">-</div>
+												<div class="hover-descr__current" data-counter>1</div>
+												<div class="hover-descr__control" data-action="plus">+</div>
+											</div>
+											<button data-cart type="submit" class="hover-descr__button button">add to cart</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slider-catalog__slide">
+								<div class="slider-catalog__card card" data-id='05'>
+									<div class="card__image">
+										<picture><source srcset="img/catalog/clothes-4.webp" type="image/webp"><img class="card__photo" src="img/catalog/clothes-4.png" alt="clothes"></picture>
+									</div>
+									<div class="card__labels">
+										<div class="card__label"></div>
+									</div>
+									<div class="card__descr">
+										<h2 class="card__about">Non est magna</h2>
+										<div class="card__prices">
+											<div class="card__price">$38</div>
+										</div>
+										<div class="card__descr-hover hover-descr">
+											<div class="hover-descr__counter">
+												<div class="hover-descr__control" data-action="minus">-</div>
+												<div class="hover-descr__current" data-counter>1</div>
+												<div class="hover-descr__control" data-action="plus">+</div>
+											</div>
+											<button data-cart type="submit" class="hover-descr__button button">add to cart</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slider-catalog__slide">
+								<div class="slider-catalog__card card" data-id='06'>
+									<div class="card__image">
+										<picture><source srcset="img/catalog/clothes-1.webp" type="image/webp"><img class="card__photo" src="img/catalog/clothes-1.png" alt="clothes"></picture>
+									</div>
+									<div class="card__labels">
+										<div class="card__label"></div>
+									</div>
+									<div class="card__descr">
+										<h2 class="card__about">Non est magna</h2>
+										<div class="card__prices">
+											<div class="card__price">$38</div>
+										</div>
+										<div class="card__descr-hover hover-descr">
+											<div class="hover-descr__counter">
+												<div class="hover-descr__control" data-action="minus">-</div>
+												<div class="hover-descr__current" data-counter>1</div>
+												<div class="hover-descr__control" data-action="plus">+</div>
+											</div>
+											<button data-cart type="submit" class="hover-descr__button button">add to cart</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slider-catalog__slide">
+								<div class="slider-catalog__card card" data-id='07'>
+									<div class="card__image">
+										<picture><source srcset="img/catalog/clothes-2.webp" type="image/webp"><img class="card__photo" src="img/catalog/clothes-2.png" alt="clothes"></picture>
+									</div>
+									<div class="card__labels">
+										<div class="card__label"></div>
+									</div>
+									<div class="card__descr">
+										<h2 class="card__about">Non est magna</h2>
+										<div class="card__prices">
+											<div class="card__price">$38</div>
+										</div>
+										<div class="card__descr-hover hover-descr">
+											<div class="hover-descr__counter">
+												<div class="hover-descr__control" data-action="minus">-</div>
+												<div class="hover-descr__current" data-counter>1</div>
+												<div class="hover-descr__control" data-action="plus">+</div>
+											</div>
+											<button data-cart type="submit" class="hover-descr__button button">add to cart</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slider-catalog__slide">
+								<div class="slider-catalog__card card" data-id='08'>
+									<div class="card__image">
+										<picture><source srcset="img/catalog/clothes-3.webp" type="image/webp"><img class="card__photo" src="img/catalog/clothes-3.png" alt="clothes"></picture>
+									</div>
+									<div class="card__labels">
+										<div class="card__label"><picture><source srcset="img/catalog/sale.webp" type="image/webp"><img src="img/catalog/sale.png" alt="sale"></picture></div>
+									</div>
+									<div class="card__descr">
+										<h2 class="card__about">Non est magna</h2>
+										<div class="card__prices">
+											<div class="card__price">$38</div>
+										</div>
+										<div class="card__descr-hover hover-descr">
+											<div class="hover-descr__counter">
+												<div class="hover-descr__control" data-action="minus">-</div>
+												<div class="hover-descr__current" data-counter>1</div>
+												<div class="hover-descr__control" data-action="plus">+</div>
+											</div>
+											<button data-cart type="submit" class="hover-descr__button button">add to cart</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div data-showmore="items" data-showmore class="show-more">
+						<div data-showmore-content="200" class="show-more__content catalog catalog_show">
+							<div class="catalog__items">
+								<div class="catalog__item">
+									<div class="slider-catalog__card card" data-id='09'>
+										<div class="card__image">
+											<picture><source srcset="img/catalog/clothes-2.webp" type="image/webp"><img class="card__photo" src="img/catalog/clothes-2.png" alt="clothes"></picture>
+										</div>
+										<div class="card__labels">
+											<div class="card__label"><picture><source srcset="img/catalog/sale.webp" type="image/webp"><img src="img/catalog/sale.png" alt="sale"></picture></div>
+										</div>
+										<div class="card__descr">
+											<h2 class="card__about">Non est magna</h2>
+											<div class="card__prices">
+												<div class="card__price">$38</div>
+											</div>
+											<div class="card__descr-hover hover-descr">
+												<div class="hover-descr__counter">
+													<div class="hover-descr__control" data-action="minus">-</div>
+													<div class="hover-descr__current" data-counter>1</div>
+													<div class="hover-descr__control" data-action="plus">+</div>
+												</div>
+												<button data-cart type="submit" class="hover-descr__button button">add to cart</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="catalog__item">
+									<div class="slider-catalog__card card" data-id='10'>
+										<div class="card__image">
+											<picture><source srcset="img/catalog/clothes-3.webp" type="image/webp"><img class="card__photo" src="img/catalog/clothes-3.png" alt="clothes"></picture>
+										</div>
+										<div class="card__labels">
+											<div class="card__label"></div>
+										</div>
+										<div class="card__descr">
+											<h2 class="card__about">Non est magna</h2>
+											<div class="card__prices">
+												<div class="card__price">$38</div>
+												<div class="card__price card__price_old">$58</div>
+											</div>
+											<div class="card__descr-hover hover-descr">
+												<div class="hover-descr__counter">
+													<div class="hover-descr__control" data-action="minus">-</div>
+													<div class="hover-descr__current" data-counter>1</div>
+													<div class="hover-descr__control" data-action="plus">+</div>
+												</div>
+												<button data-cart type="submit" class="hover-descr__button button">add to cart</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="catalog__item">
+									<div class="slider-catalog__card card" data-id='11'>
+										<div class="card__image">
+											<picture><source srcset="img/catalog/clothes-4.webp" type="image/webp"><img class="card__photo" src="img/catalog/clothes-4.png" alt="clothes"></picture>
+										</div>
+										<div class="card__labels">
+											<div class="card__label"></div>
+										</div>
+										<div class="card__descr">
+											<h2 class="card__about">Non est magna</h2>
+											<div class="card__prices">
+												<div class="card__price">$38</div>
+											</div>
+											<div class="card__descr-hover hover-descr">
+												<div class="hover-descr__counter">
+													<div class="hover-descr__control" data-action="minus">-</div>
+													<div class="hover-descr__current" data-counter>1</div>
+													<div class="hover-descr__control" data-action="plus">+</div>
+												</div>
+												<button data-cart type="submit" class="hover-descr__button button">add to cart</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="catalog__item">
+									<div class="slider-catalog__card card" data-id='12'>
+										<div class="card__image">
+											<picture><source srcset="img/catalog/clothes-1.webp" type="image/webp"><img class="card__photo" src="img/catalog/clothes-1.png" alt="clothes"></picture>
+										</div>
+										<div class="card__labels">
+											<div class="card__label"></div>
+										</div>
+										<div class="card__descr">
+											<h2 class="card__about">Non est magna</h2>
+											<div class="card__prices">
+												<div class="card__price">$38</div>
+											</div>
+											<div class="card__descr-hover hover-descr">
+												<div class="hover-descr__counter">
+													<div class="hover-descr__control" data-action="minus">-</div>
+													<div class="hover-descr__current" data-counter>1</div>
+													<div class="hover-descr__control" data-action="plus">+</div>
+												</div>
+												<button data-cart type="submit" class="hover-descr__button button">add to cart</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<button hidden data-showmore-button type="button" class="show-more__more">
+							<span class="show-more__button button">Show more</span>
+							<span class="show-more__button show-more__button_less button">Show less</span>
+						</button>
+					</div>
+					<a href="catalog.html" class="catalog__button button">Show catalog</a>
+				</div>
+			</section>
+			<section class="page__about about">
+				<div class="about__container">
+					<h2 class="about__title">About us</h2>
+					<div class="about__wrapper">
+						<div class="about__descr">
+							<h3 class="about__title about__title_mbl">Cras nascetur cum nec</h3>
+							<div class="about__text text-about">
+								<div class="text-about__text">
+									<p>Morbi quisque facilisis pretium, ullamcorper. Eget id quisque ridiculus ipsum duis venenatis arcu tristique vestibulum. Integer in praesent pretium aliquam. Lacinia facilisi adipiscing donec orci ut aliquam, elementum cursus. Ut senectus nec sit elementum nulla faucibus adipiscing.</p>
+									<p>Amet ullamcorper elementum neque sodales a. Lectus dolor praesent faucibus blandit. Sit mauris ac at semper tempor quisque adipiscing orci. Urna sagittis nunc lorem amet. Magnis fames faucibus viverra pulvinar lectus vitae lacus ut. Imperdiet quis auctor ullamcorper iaculis risus neque, cursus pulvinar. </p>
+									<p><span>Vitae id nullam</span>Non velit, convallis aliquet vehicula facilisis suspendisse. Urna fusce elit, massa sit cursus sit enim, in in.</p>
+								</div>
+								<div data-showmore="items" data-showmore-media="768.98,max" class="showmore">
+									<button hidden data-showmore-button type="button" class="showmore__more">
+										<span>show more</span>
+										<span>show less</span>
+									</button>
+									<div data-showmore-content="200" class="showmore__content">
+										<p class="showmore__text"><span>Vitae id nullam</span> Non velit, convallis aliquet vehicula facilisis suspendisse. Urna fusce elit, massa sit cursus sit enim, in in. </p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="about__image">
+							<picture><source data-srcset="img/about/image.webp" type="image/webp"><img data-src="img/about/image.jpg" alt="clothes"></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__reviews reviews">
+				<div class="reviews__container">
+					<h2 class="reviews__title">Reviews</h2>
+					<div class="reviews__wrapper">
+
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="reviews__item">
+										<div class="reviews__image">
+											<picture><source srcset="img/reviews/girl_1.webp" type="image/webp"><img src="img/reviews/girl_1.jpg" alt="Женщина"></picture>
+										</div>
+										<div class="reviews__descr">
+											<h3 data-da='.reviews__image,768.98,first' class="reviews__subtitle">Talia Kerin</h3>
+											<p class="reviews__text">Sagittis sed habitasse orci orci. Tellus, nulla magna blandit ornare non, nullam vel. Consectetur quam varius arcu, eget dolor quis. Aliquam lectus lacus maecenas leo, eget tincidunt ut venenatis. Rutrum nibh ac libero, viverra consectetur nunc. Vitae parturient ut facilisi eros, sagittis magna nec. </p>
+											<!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, tempore saepe cumque quaerat, architecto facere fugit culpa dolorum itaque laudantium at doloremque obcaecati esse omnis minima nostrum quae consequuntur eius. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, deleniti et! Consectetur, repellat, impedit porro dolorem quis repellendus omnis placeat quo nostrum ducimus a possimus eligendi fugit sunt distinctio accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, odio dignissimos ullam cumque sit, at accusantium totam consequatur voluptate ut alias? Mollitia quia ea molestias! Nemo aut delectus corrupti quo! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium quas, voluptatibus illo nihil quisquam maiores et modi hic harum dolor aperiam minus fugiat architecto provident, enim, dolores ut aliquid deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis maiores, repellat dolorem mollitia ex fugit aliquam quod, autem ullam eius distinctio laudantium consequatur dolorum qui odit doloribus aspernatur, laborum sint! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo cum illum similique eius praesentium consequuntur esse molestias minima repellat! Nobis repudiandae veniam suscipit illum minima ipsam repellendus pariatur reiciendis sit. -->
+											<div class="reviews__social social">
+												<a href="#" class="social__link _icon-vk"></a>
+												<a href="#" class="social__link _icon-facebook"></a>
+												<a href="#" class="social__link _icon-instagram"></a>
+												<a href="#" class="social__link _icon-telegram"></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="reviews__item">
+										<div class="reviews__image reviews__image_two">
+											<picture><source srcset="img/reviews/girl_2.webp" type="image/webp"><img src="img/reviews/girl_2.jpg" alt="Женщина"></picture>
+										</div>
+										<div class="reviews__descr">
+											<h3 data-da='.reviews__image_two,768.98,first' class="reviews__subtitle">Talia Kerin</h3>
+											<p class="reviews__text">Sagittis sed habitasse orci orci. Tellus, nulla magna blandit ornare non, nullam vel. Consectetur quam varius arcu, eget dolor quis. Aliquam lectus lacus maecenas leo, eget tincidunt ut venenatis. Rutrum nibh ac libero, viverra consectetur nunc. Vitae parturient ut facilisi eros, sagittis magna nec. Sagittis sed habitasse orci orci. Tellus, nulla magna blandit ornare non, nullam vel. Consectetur quam varius arcu, eget dolor quis. Aliquam lectus lacus maecenas leo, eget tincidunt ut venenatis. Rutrum nibh ac libero, viverra consectetur nunc. Vitae parturient ut facilisi eros, sagittis magna nec.</p>
+											<div class="reviews__social social">
+												<a href="#" class="social__link _icon-vk"></a>
+												<a href="#" class="social__link _icon-facebook"></a>
+												<a href="#" class="social__link _icon-instagram"></a>
+												<a href="#" class="social__link _icon-telegram"></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="reviews__item">
+										<div class="reviews__image reviews__image_three">
+											<picture><source srcset="img/reviews/girl_3.webp" type="image/webp"><img src="img/reviews/girl_3.jpg" alt="Женщина"></picture>
+										</div>
+										<div class="reviews__descr">
+											<h3 data-da='.reviews__image_three,768.98,first' class="reviews__subtitle">Talia Kerin</h3>
+											<p class="reviews__text">Sagittis sed habitasse orci orci. Tellus, nulla magna blandit ornare non, nullam vel. Consectetur quam varius arcu, eget dolor quis. Aliquam lectus lacus maecenas leo, eget tincidunt ut venenatis. Rutrum nibh ac libero, viverra consectetur nunc. Vitae parturient ut facilisi eros, sagittis magna nec. Rutrum nibh ac libero, viverra consectetur nunc. Vitae parturient ut facilisi eros, sagittis magna nec.</p>
+											<div class="reviews__social social">
+												<a href="#" class="social__link _icon-vk"></a>
+												<a href="#" class="social__link _icon-facebook"></a>
+												<a href="#" class="social__link _icon-instagram"></a>
+												<a href="#" class="social__link _icon-telegram"></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="reviews__item">
+										<div class="reviews__image reviews__image_four">
+											<picture><source srcset="img/reviews/girl_4.webp" type="image/webp"><img src="img/reviews/girl_4.jpg" alt="Женщина"></picture>
+										</div>
+										<div class="reviews__descr">
+											<h3 data-da='.reviews__image_four,768.98,first' class="reviews__subtitle">Talia Kerin</h3>
+											<p class="reviews__text">Sagittis sed habitasse orci orci. Tellus, nulla magna blandit ornare non, nullam vel. Consectetur quam varius arcu, eget dolor quis. Aliquam lectus lacus maecenas leo, eget tincidunt ut venenatis. Rutrum nibh ac libero, viverra consectetur nunc. Vitae parturient ut facilisi eros, sagittis magna nec.</p>
+											<div class="reviews__social social">
+												<a href="#" class="social__link _icon-vk"></a>
+												<a href="#" class="social__link _icon-facebook"></a>
+												<a href="#" class="social__link _icon-instagram"></a>
+												<a href="#" class="social__link _icon-telegram"></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="reviews__item">
+										<div class="reviews__image reviews__image_five">
+											<picture><source srcset="img/reviews/girl_5.webp" type="image/webp"><img src="img/reviews/girl_5.jpg" alt="Женщина"></picture>
+										</div>
+										<div class="reviews__descr">
+											<h3 data-da='.reviews__image_five,768.98,first' class="reviews__subtitle">Talia Kerin</h3>
+											<p class="reviews__text">Sagittis sed habitasse orci orci. Tellus, nulla magna blandit ornare non, nullam vel. Consectetur quam varius arcu, eget dolor quis. Aliquam lectus lacus maecenas leo, eget tincidunt ut venenatis. Rutrum nibh ac libero, viverra consectetur nunc. Vitae parturient ut facilisi eros, sagittis magna nec. Vitae parturient ut facilisi eros, sagittis magna nec.</p>
+											<div class="reviews__social social">
+												<a href="#" class="social__link _icon-vk"></a>
+												<a href="#" class="social__link _icon-facebook"></a>
+												<a href="#" class="social__link _icon-instagram"></a>
+												<a href="#" class="social__link _icon-telegram"></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+
+						<div class="pagin">
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="contacts">
+				<div class="contacts__container">
+					<h2 class="contacts__title">Contacts</h2>
+					<div class="contacts__wrapper">
+						<div class="contacts__content">
+							<ul class="contacts__list">
+								<li class="contacts__item">Address: <span>Odessa, New Privos, Pantelemonovskaya,25</span></li>
+								<li class="contacts__item">Phone:<a href="tel:+380933627428">+38 (093) 362-74-28</a></li>
+								<li class="contacts__item">Fax:<a href="tel:+380933627429">+38 (093) 362-74-29</a></li>
+							</ul>
+							<ul class="contacts__list">
+								<li class="contacts__item"><span>Requisites:</span></li>
+								<li class="contacts__item">ОКПО 00032547</li>
+								<li class="contacts__item">ОКАТО 45293554001</li>
+								<li class="contacts__item">ОКТМО 45397000001</li>
+							</ul>
+						</div>
+						<form class="contacts__form form" action="#" data-dev data-popup-massage='#contacts'>
+							<div class="form__item">
+								<input required id="name" type="text" class="form__input" name="name" placeholder="Your name">
+							</div>
+							<div class="form__item">
+								<input required id="name" type="tel" class="form__input" name="name" placeholder="Your phone">
+							</div>
+							<div class="form__item">
+								<input required id="name" type="text" class="form__input" name="name" placeholder="Your email">
+							</div>
+							<div class="form__item"><textarea class="form__input form__textarea" name="textarea" placeholder="Message"></textarea></div>
+							<button type="submit" class="form__button button">Send</button>
+						</form>
+					</div>
+
+				</div>
+				<div id="map" class="page__map map"></div>
+				<!-- подключение скрипта карты leaflet-->
+				<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js?_v=20220529173035" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__main">
+					<div class="footer__conse conse-footer">
+						<h4 class="conse-footer__tittle">Consequat orci, risus</h4>
+						<div class="conse-footer__text">Nulla tellus diam ornare id purus et nisi facilisis nec. Orci nullam ornare quisque mollis sollicitudin. Ante risus lorem pellentesque orci.</div>
+						<div data-da=".footer__main,991.98" class="conse-footer__social social-footer">
+							<div class="social-footer__links">
+								<a href="#" class="social-footer__link _icon-discord"></a>
+								<a href="#" class="social-footer__link _icon-youtube"></a>
+								<a href="#" class="social-footer__link _icon-twitter"></a>
+								<a href="#" class="social-footer__link _icon-pinterest"></a>
+								<a href="#" class="social-footer__link _icon-reddit"></a>
+								<a href="#" class="social-footer__link _icon-facebook-2"></a>
+							</div>
+						</div>
+					</div>
+					<div class="footer__nav nav-footer">
+						<div data-spollers="991.98" class="nav-footer__spollers spollers">
+							<div class="footer-spoiler-item spollers__item">
+								<button type="button" data-spoller class="footer-spoller-item__tittle spollers__tittle">Marketplace</button>
+								<div class="footer-spoller-item__body spollers__body">
+									<nav class="menu-footer">
+										<ul class="menu-footer__list">
+											<li class="menu-footer__item">
+												<a href="" class="menu-footer__link">Shop</a>
+											</li>
+											<li class="menu-footer__item">
+												<a href="" class="menu-footer__link">About</a>
+											</li>
+											<li class="menu-footer__item">
+												<a href="" class="menu-footer__link">Gallery</a>
+											</li>
+											<li class="menu-footer__item">
+												<a href="" class="menu-footer__link">Contact</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+							<div class="footer-spoiler-item spollers__item">
+								<button type="button" data-spoller class="footer-spoller-item__tittle spollers__tittle">Resource</button>
+								<div class="footer-spoller-item__body spollers__body">
+									<nav class="menu-footer">
+										<ul class="menu-footer__list">
+											<li class="menu-footer__item">
+												<a href="" class="menu-footer__link">Sed</a>
+											</li>
+											<li class="menu-footer__item">
+												<a href="" class="menu-footer__link">Vitae</a>
+											</li>
+											<li class="menu-footer__item">
+												<a href="" class="menu-footer__link">Tellus</a>
+											</li>
+											<li class="menu-footer__item">
+												<a href="" class="menu-footer__link">Dui</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+							<div class="footer-spoiler-item spollers__item">
+								<button type="button" data-spoller class="footer-spoller-item__tittle spollers__tittle">My Account</button>
+								<div class="footer-spoller-item__body spollers__body">
+									<nav class="menu-footer">
+										<ul class="menu-footer__list">
+											<li class="menu-footer__item">
+												<a href="" class="menu-footer__link">Congue</a>
+											</li>
+											<li class="menu-footer__item">
+												<a href="" class="menu-footer__link">Augue</a>
+											</li>
+											<li class="menu-footer__item">
+												<a href="" class="menu-footer__link">Posuere</a>
+											</li>
+											<li class="menu-footer__item">
+												<a href="" class="menu-footer__link">Molestie</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+							<div class="footer-spoiler-item spollers__item">
+								<button type="button" data-spoller class="footer-spoller-item__tittle spollers__tittle">Company</button>
+								<div class="footer-spoller-item__body spollers__body">
+									<nav class="menu-footer">
+										<ul class="menu-footer__list">
+											<li class="menu-footer__item">
+												<a href="" class="menu-footer__link">Cras</a>
+											</li>
+											<li class="menu-footer__item">
+												<a href="" class="menu-footer__link">Tincidunt</a>
+											</li>
+											<li class="menu-footer__item">
+												<a href="" class="menu-footer__link">Gravida</a>
+											</li>
+											<li class="menu-footer__item">
+												<a href="" class="menu-footer__link">Mattis</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<p class="footer__copyright">Copyright ® 2021</p>
+					<div class="footer__info">
+						<a href="#/" class="footer__link footer-link">Policy</a>
+						<a href="#/" class="footer__link footer-link">Security</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content content-popup">
+				<div class="content-popup__head">
+					<h3 class="content-popup__sub">Make an order</h3>
+					<button data-close type="button" class="content-popup__close">x</button>
+				</div>
+				<div class="content-popup__block">
+					<form class="content-popup__form form" action="#" data-dev data-popup-massage='#contacts'>
+						<div class="form__item">
+							<input required id="name" type="text" class="form__input" name="name" placeholder="Your name">
+						</div>
+						<div class="form__item">
+							<input required id="name" type="tel" class="form__input" name="name" placeholder="Your phone">
+						</div>
+						<div class="form__item">
+							<input required id="name" type="text" class="form__input" name="name" placeholder="Your email">
+						</div>
+						<div class="form__item"><textarea class="form__input form__textarea" name="textarea" placeholder="Message"></textarea></div>
+						<div class="form__ordered top-head">
+							<div class="top-head__cart -icon-cart"><span>1</span></div>
+							<h2 class="top-head__subtitle">You ordered:</h2>
+						</div>
+						<button type="submit" class="form__button button">Send an order</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/app.min.js?_v=20220529173035"></script>
+</body>
+
+</html>
